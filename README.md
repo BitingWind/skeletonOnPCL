@@ -10,15 +10,15 @@ The skeleton curve is propitious to Get:
 
 
 Version Information:
-> Windows  10   MSVC  2010 (32bit)
-> PCL 1.7.1  and  specify  3rd Library : VTK ,Boost, Eigen,FLANN,OpenNI,QHULL
-> Qt 4.8.6 (C:\)
+* Windows  10   MSVC  2010 (32bit)
+* PCL 1.7.1  and  specify  3rd Library : VTK ,Boost, Eigen,FLANN,OpenNI,QHULL
+* Qt 4.8.6 (C:\)
 
 All file in the repository is only CORE code.
 You can reconstract this project by following steps :
-> Make the profile  in last list
-> New a porject 
-> Alter the PCL-ROOT directory to yourself(mine:D:\PCL 1.7.1 ) in the PCL.props (Property Profile)
-> Add PCL.props To Attribute Manager (Not Source code !)  
-> Add other source code files to your project
+* Make the profile  in last list
+* New a porject 
+* Alter the PCL-ROOT directory to yourself(mine:D:\PCL 1.7.1 ) in the PCL.props (Property Profile)
+* Add PCL.props To Attribute Manager (Not Source code !)  
+* Add other source code files to your project
 
