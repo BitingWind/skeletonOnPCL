@@ -5,8 +5,8 @@ This project is created for skeleton extract algorithm based on PCL(Point Cloud 
 The skeleton extract algorithm of 3D Point Cloud aim to extract a skeleton curve that can representing
 the whole structure information of Point Cloud. 
 The skeleton curve is propitious to Get:
->The path of 3-D roaming.
-The Master's degree. ^-^
+* The path of 3-D roaming.
+* The Master's degree. ^-^
 
 
 Version Information:
