@@ -6,7 +6,7 @@ The skeleton extract algorithm of 3D Point Cloud aim to extract a skeleton curve
 the whole structure information of Point Cloud. 
 The skeleton curve is propitious to Get:
 >The path of 3-D roaming.
->The Master's degree. ^-^
+The Master's degree. ^-^
 
 
 Version Information:
