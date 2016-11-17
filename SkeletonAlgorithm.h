@@ -4,7 +4,7 @@
 #include<pcl/io/io.h>
 #include<pcl/io/ply_io.h>
 #include<pcl/io/pcd_io.h>
-
+#include<math.h>
 #include<vector>
 
 #include "VertexOnPCL.h"
@@ -51,7 +51,7 @@ public:
 	void sample_points(unsigned int num);
 	void sample_points(float ratio);
 
-	//default radius ,respect for 20 points in the neighbour with the default radius 
+	//default radius ,respect for 10 points in the neighbour with the default radius 
     double DEFAULT_RADIUS;
 
 	// for function grid() more than once

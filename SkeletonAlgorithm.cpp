@@ -31,6 +31,9 @@ void SkeletonAlgorithm::read_ply_file(std::string filename)
 
 	for(int i = 0; i < cloud_original->points.size(); i++)
 	{
+		cloud_original->points[i].x *= 1000; 		
+		cloud_original->points[i].y *= 1000; 		
+		cloud_original->points[i].z *= 1000; 		
 		cloud_original->points[i].rgba = 0x2E8B57; //SeaGreen color
 	}
 
@@ -70,8 +73,8 @@ void SkeletonAlgorithm::count_default_radius()
 		if(points[i].z > max_z) max_z = points[i].z;
 	}
 
-	//default radius ,respect for 20 points in the neighbour with the default radius 
-    DEFAULT_RADIUS = (max_x - min_x + max_y - min_y + max_z - min_z ) / number * 20 / 3;
+	//default radius ,respect for 10 points in the neighbour with the default radius 
+    DEFAULT_RADIUS = pow((double)((max_x - min_x) * (max_y - min_y) * (max_z - min_z ) / number * 10),(double)1.0/3);
 	
 	//std::cout << "RADIUS_DEFAULT £º" << RADIUS_DEFAULT << std::endl;
 
@@ -79,7 +82,7 @@ void SkeletonAlgorithm::count_default_radius()
 
 void SkeletonAlgorithm::sample_points()
 {
-	sample_points((unsigned int)(number * 0.06));
+	sample_points((unsigned int)(number * 0.03));
 }
 
 void SkeletonAlgorithm::sample_points(float ratio)
